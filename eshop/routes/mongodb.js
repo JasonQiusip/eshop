@@ -2,26 +2,26 @@ var mongoose = require('mongoose'),
     DB_URL = 'mongodb://localhost:27017/eshop';
 
 /**
- * 连接
+ * 杩炴帴
  */
 mongoose.connect(DB_URL);
 
 /**
-  * 连接成功
+  * 杩炴帴鎴愬姛
   */
 mongoose.connection.on('connected', function () {    
     console.log('Mongoose connection open to ' + DB_URL);  
 });    
 
 /**
- * 连接异常
+ * 杩炴帴寮傚父
  */
 mongoose.connection.on('error',function (err) {    
     console.log('Mongoose connection error: ' + err);  
 });    
  
 /**
- * 连接断开
+ * 杩炴帴鏂紑
  */
 mongoose.connection.on('disconnected', function () {    
     console.log('Mongoose connection disconnected');  
