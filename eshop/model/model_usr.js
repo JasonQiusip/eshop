@@ -16,8 +16,9 @@ var UserSchema = new Schema({
     bankaccount:{type: String},
     isactive:{type: Number},
     shopid:{type: String},
-    agentclass:{type: Number},
-    points:{type: Number},
+    agentclass:{type: Number, default:0},
+    points:{type: Number, default:0},
+    permission:{type: Number, default:0}
 });
 
 module.exports = mongoose.model('user', UserSchema);
