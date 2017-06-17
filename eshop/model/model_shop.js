@@ -8,6 +8,7 @@ var ShopSchema = new Schema({
 	userid:String,
 	shopimg:String,
 	shopimg_thumnail:String,
+	
 });
 
 module.exports = mongoose.model('shop', ShopSchema);

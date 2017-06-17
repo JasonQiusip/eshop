@@ -8,6 +8,20 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var user = require("model/model_usr");
+var adminUser = require("model/model_admin_usr");
+var article = require("model/model_article");
+var articleCategory = require("model/model_article_cat");
+var category = require("model/model_category");
+var comment = require("model/model_comment");
+var deliveryGood = require("model/model_delivery_good");
+var deliveryOrder = require("model/model_delivery_order");
+var goods = require("model/model_goods");
+var goodsAttr = require("model/model_goods_attr");
+var goodsType = require("model/model_goods_type");
+var order = require("model/model_order");
+var shop = require("model/model_shop");
+
 var app = express();
 
 // view engine setup
